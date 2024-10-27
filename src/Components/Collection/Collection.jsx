@@ -8,7 +8,7 @@ const Collection = () => {
   const [books,setBooks]=useState([]);
    useEffect(()=>{
 
-    axios.get('http://localhost:4000/api/books/')
+    axios.get('https://reader-space-backend.vercel.app/api/books/')
     .then((response)=>{
       console.log(response.data);
       setBooks(response.data)
