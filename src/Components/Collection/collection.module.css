@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    background: #FFF2E1;
+
+
+}
+.book-card{
+    width: 200px;
+     display: flex;
+    flex-direction: column;
+
+    
+}
+.cover-image{
+    width: 140px;
+    height: 200px;
+
+}
+h4{ 
+    width: 140px;
+    margin: 10px 5px 0 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.author{
+    font-size: small;
+    font-weight: 600;
+    color: grey;
+    padding: 0;
+    margin: 10px 5px 0 5px;
+    font-family: cursive;
+}
+.genre{
+    font-size: small;
+    
+    font-weight: 600;
+    color: grey;
+    padding: 0;
+    margin: 10px 5px 0 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
