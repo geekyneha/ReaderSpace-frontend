@@ -3,16 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-   
-  
+
+
 }
-.nav-container{
+
+.nav-container {
     width: 100vw;
 
 }
 
-    
-.navbar{
+
+.navbar {
     width: 100vw;
     height: 8vh;
     background-color: #A79277;
@@ -24,9 +25,9 @@
     font-weight: 400;
 
 }
-.navigations > ul{
+
+.navigations>ul {
     display: flex;
-    
     gap: 90px;
     list-style: none;
 }
@@ -44,20 +45,34 @@
     width: 8vw;
     outline: none;
     align-self: flex-start;
-    
+
 
 }
-.logo{
+
+.logo {
     width: 50px;
 }
-.logo-image{
+
+.logo-image {
     width: 50px;
     border-radius: 20px;
 }
+
 .styled-link {
     color: #FFF2E1;
     text-decoration: none;
-   
-  }
-  
-  
+
+}
+
+@media (max-width:640px) {
+    .btn {
+        display: none;
+    }
+
+    .navigations>ul {
+
+        gap: 30px;
+
+    }
+
+}
