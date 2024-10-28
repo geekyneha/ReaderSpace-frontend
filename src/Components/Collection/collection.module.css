@@ -18,6 +18,9 @@
 
 
 }
+.loading{
+    mix-blend-mode: multiply;
+}
 .book-card{
     width: 200px;
      display: flex;

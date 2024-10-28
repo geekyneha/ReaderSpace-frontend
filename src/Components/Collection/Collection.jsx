@@ -31,7 +31,7 @@ const Collection = () => {
       <Navbar />
       <div className={styles['container']}>
         {loading ? (
-          <div className={styles['loading']}> <img src="https://i.sstatic.net/kOnzy.gif" alt="loading" /> Loading...</div>
+          <div > <img  className={styles['loading']} src="https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839PA4459PT28D187567209W10000H1934/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/loading-symbol-sticker.jpg" alt="loading" /> </div>
         ) : (
           books.map((book, index) => (
             <div
