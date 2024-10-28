@@ -52,6 +52,7 @@ const AddBooks = () => {
               id="title"
               onChange={(e) => setTitle(e.target.value)}
               value={title}
+              required
             />
           </div>
           <div className={styles['author']}>
@@ -63,6 +64,7 @@ const AddBooks = () => {
               id="author"
               onChange={(e) => setAuthor(e.target.value)}
               value={author}
+              required
             />
           </div>
 
@@ -75,6 +77,7 @@ const AddBooks = () => {
               id="genre"
               onChange={(e) => setGenre(e.target.value)}
               value={genre}
+              required
             />
           </div>
           <div className={styles['cover-image']}>
@@ -86,6 +89,7 @@ const AddBooks = () => {
               id="cover-image"
               onChange={(e) => setCoverImage(e.target.value)}
               value={coverImage}
+              required
             />
           </div>
           <div>
