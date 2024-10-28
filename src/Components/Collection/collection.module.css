@@ -7,12 +7,12 @@
 
 .container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding: 30px;
     background: #FFF2E1;
 
@@ -51,4 +51,11 @@ h4{
     padding: 0;
     margin: 10px 5px 0 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width:640px) {
+
+    .container{
+        column-gap: 40px;
+    }
+    
 }
