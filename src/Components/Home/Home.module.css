@@ -69,3 +69,15 @@ h1{
     
 
 }
+@media (max-width:640px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    .left-sec,.right-sec{
+        width: 100vw;
+    }
+    img{
+        width: 400px;
+    }
+}
