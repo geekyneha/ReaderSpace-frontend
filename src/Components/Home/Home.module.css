@@ -80,4 +80,7 @@ h1{
     img{
         width: 400px;
     }
+    .title{
+        width: 90vw;
+    }
 }
