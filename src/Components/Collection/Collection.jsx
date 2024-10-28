@@ -9,7 +9,7 @@ const Collection = () => {
 
   const getData = async () => {
     try {
-      const response = await axios.get('https://reader-space-backend.vercel.app/api/books/');
+      const response = await axios.get('https://readerspace-backend.onrender.com/api/books/');
       console.log(response.data);
       setBooks(response.data);
     } catch (error) {
