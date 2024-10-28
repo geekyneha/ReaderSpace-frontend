@@ -7,16 +7,16 @@ import Navbar from '../Navbar/Navbar.jsx';
 const Collection = () => {
   const [books,setBooks]=useState([]);
 
-  const getData= async ()=>{
-     axios.get('https://reader-space-backend.vercel.app/api/books/')
-    .then((response)=>{
+  const getData = async () => {
+    try {
+      const response = await axios.get('https://reader-space-backend.vercel.app/api/books/');
       console.log(response.data);
-      setBooks(response.data)
-    })
-    .catch((error)=>{
-      console.log(error);
-    })
-  }
+      setBooks(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
    useEffect(()=>{
 
    getData();

@@ -29,9 +29,6 @@ const AddBooks = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    
-   
     postData();
     setTitle('');
     setAuthor('');
