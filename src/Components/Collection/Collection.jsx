@@ -6,9 +6,9 @@ import Navbar from '../Navbar/Navbar.jsx';
 
 const Collection = () => {
   const [books,setBooks]=useState([]);
-   useEffect(()=>{
 
-    axios.get('https://reader-space-backend.vercel.app/api/books/')
+  const getData= async ()=>{
+     axios.get('https://reader-space-backend.vercel.app/api/books/')
     .then((response)=>{
       console.log(response.data);
       setBooks(response.data)
@@ -16,6 +16,10 @@ const Collection = () => {
     .catch((error)=>{
       console.log(error);
     })
+  }
+   useEffect(()=>{
+
+   getData();
 
   },[])
 
