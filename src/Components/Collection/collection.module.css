@@ -55,7 +55,7 @@ h4{
 @media (max-width:640px) {
 
     .container{
-        column-gap: 40px;
+        column-gap: 100px;
     }
     
 }
