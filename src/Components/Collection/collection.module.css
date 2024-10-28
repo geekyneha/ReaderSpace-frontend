@@ -20,6 +20,8 @@
 }
 .loading{
     mix-blend-mode: multiply;
+    width: 200px;
+    border-radius: 50px;
 }
 .book-card{
     width: 200px;
