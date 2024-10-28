@@ -11,31 +11,32 @@ const AddBooks = () => {
   const [coverImage, setCoverImage] = useState('');
   const navigate = useNavigate();
 
-  const postData= async()=>{
+  const postData = async () => {
     const bookData = {
-      title:title,
-      author:author,
-      genre:genre,
-     coverImage: coverImage,
+      title,
+      author,
+      genre,
+      coverImage,
     };
-     await  axios
-    .post('https://reader-space-backend.vercel.app/api/books/', bookData)
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((error) => {
+  
+    try {
+      const response = await axios.post('https://reader-space-backend.vercel.app/api/books/', bookData);
+      console.log('Book added:', response.data);
+    } catch (error) {
       console.error('There was an error adding the book!', error);
-    });
-  }
+    }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    postData();
-    setTitle('');
-    setAuthor('');
-    setGenre('');
-    setCoverImage('');
-    navigate('/browse/collection')
+    postData().then(() => {
+      setTitle('');
+      setAuthor('');
+      setGenre('');
+      setCoverImage('');
+      navigate('/browse/collection'); 
+    });
   };
+  
   return (
     <>
     <Navbar/>
